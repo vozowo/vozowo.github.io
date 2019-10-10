@@ -5,11 +5,26 @@
 </head>
 
 <body>
-  <video autoplay loop id="bg">
-    <source src=".\\content\\bg2.mp4" type="video/mp4">
-  </video>
+	<video autoplay loop id="bg">
+		<source src=".\\content\\bg2.mp4" type="video/mp4">
+	</video>
   
-  <script>
-    document.getElementById("bg").volume = 0.2;
-  </script>
+	<script>
+		document.getElementById("bg").volume = 0.2;
+	</script>
+  
+	<style> 
+	#bg
+	{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+	} 
+	</style>
+  
+	<div class="bg">
+		
+	</div>
 </body>
