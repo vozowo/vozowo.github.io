@@ -5,30 +5,13 @@
 		</title>
 	</head>
 
-	<body bgcolor="#000000">
-		<div id="loops"> </div>
-		
+	<body bgcolor="#000000">		
 		<video autoplay loop id="bg">
 			<source src=".\\content\\bgv3123.mp4" type="video/mp4">
 		</video>
 	  
 		<script>
-			document.getElementById("bg").volume = 0.2;
-			
-			var _loops = 0;
-
-			document.getElementById('loops').innerText = _loops;
-
-			document.getElementById("bg").addEventListener('ended', function ()
-			{        
-				this.currentTime = 0;
-				this.play();
-				
-				_loops++;
-
-				document.getElementById('loops').innerText = _loops; 
-
-			}, false);		
+			document.getElementById("bg").volume = 0.2;		
 		</script>
 	  
 		<style> 
